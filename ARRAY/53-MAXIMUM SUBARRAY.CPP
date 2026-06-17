@@ -8,7 +8,6 @@ public:
             currentSum = max(nums[i], currentSum + nums[i]);
             maxSum = max(maxSum, currentSum);
         }
-
         return maxSum;
     }
 };
