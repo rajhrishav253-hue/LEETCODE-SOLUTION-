@@ -1,0 +1,30 @@
+CLASS SOLUTION{
+PUBLIC:
+INT CHILDCOOKIES(VECTOR<INT> G, VECTOR<INT> S){
+SORT(G.SORT(),G.END());
+SORT(S.SORT(),S.END());
+INT I = 0;
+INT J = 0;
+WHILE(I<G.SIZE() && J<G.SIZE()){
+IF(S[J] >= G[I])
+I++;
+J++;
+}
+RETURN I;
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
